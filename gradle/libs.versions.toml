@@ -2,6 +2,8 @@
 junit = "5.+"
 assertj = "3.+"
 
+spring = "3.4.5"
+
 [libraries]
 # junit
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
@@ -9,3 +11,10 @@ junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref 
 
 # assertj
 assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+
+# spring
+spring-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+
+[plugins]
+spring = { id = "org.springframework.boot", version.ref = "spring" }
