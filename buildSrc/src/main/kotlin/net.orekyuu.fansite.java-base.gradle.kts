@@ -27,8 +27,10 @@ tasks.withType<JavaCompile> {
 }
 
 dependencies {
+    testImplementation(platform(libs.junit.bom))
     testRuntimeOnly(libs.junit.engine)
     testImplementation(libs.junit.jupiter)
+    testImplementation(libs.junit.launcher)
     testImplementation(libs.assertj)
 }
 
