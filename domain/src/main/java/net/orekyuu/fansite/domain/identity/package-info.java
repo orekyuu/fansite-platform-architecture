@@ -1,0 +1,1 @@
+package net.orekyuu.fansite.domain.identity;
